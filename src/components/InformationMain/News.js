@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import { HashLink } from 'react-router-hash-link';;
+import { HashLink } from 'react-router-hash-link';
+
+import arrowNewsImg from '@img/main/arrow-news.png'
 
 function News ({newsPreview, titleText}) {
 	const NewsList = <ul className={"newsList"}>
@@ -21,7 +23,7 @@ function News ({newsPreview, titleText}) {
 				</HashLink>
 			</p>
 			<HashLink to='/news/#'>
-				<img src="../../../public/img/main/arrow-news.png" alt="arrow-news"/>
+				<img src={arrowNewsImg} alt="arrow-news"/>
 			</HashLink>
 		</div>
 	</>

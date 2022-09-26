@@ -4,6 +4,7 @@ import React from 'react';
 import getI18Text from '../../components/utils/i18n'
 
 import Links from '../Lists/Links';
+import closeIcon from '@img/main/close_icon.png'
 
 // const rightFirst = [
 //     {
@@ -94,7 +95,7 @@ function HiddenNavigationList({dataLinks, clicked, languageID, clickMenuHandler}
                 </div>
             </div> */}
             <button className="closeMenu" onClick={clickMenuHandler}>
-                <img src="../../../public/img/main/close_icon.png" alt="#"/>
+                <img src={closeIcon} alt="#"/>
             </button>
         </div>
     </div>

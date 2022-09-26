@@ -1,11 +1,12 @@
 import React from 'react'
-import { HashLink } from 'react-router-hash-link';;
+import { HashLink } from 'react-router-hash-link';
+import authorPublic from '@img/main/authors_public.png';
 
-function Authors({linkText, linkURL, imgSrc, imgAlt}) {
+function Authors({linkText, imgAlt}) {
     return <HashLink to={'/authors/#'} className={"Authors"}>
         <img
             className={"Authors__img"}
-            src='.../../../public/img/main/authors_public.png'
+            src={authorPublic}
             alt={imgAlt}
         />
         <span className={"Authors__link"}>

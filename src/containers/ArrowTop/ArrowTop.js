@@ -1,6 +1,7 @@
 import React, {useCallback} from 'react';
 
 import './ArrowTop.scss'
+import ArrowTopImg from '@img/main/top-arrow-vitapol-info.png';
 
 function ArrowTop() {
     const onClickScrollTop = useCallback(() => {
@@ -13,7 +14,7 @@ function ArrowTop() {
 
     return <>
         <div className="arrowTop" onClick={onClickScrollTop}>
-            <img src="../../../public/img/main/top-arrow-vitapol-info.png" alt="#"/>
+            <img src={ArrowTopImg} alt="#"/>
         </div>
     </>
 }

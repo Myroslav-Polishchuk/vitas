@@ -1,6 +1,7 @@
 import React from 'react'
 import { HashLink } from 'react-router-hash-link';
 import {createImgSrc} from './../utils/utils';
+import arrowNewsImg from '@img/main/arrow-news.png';
 
 function Articles({previewArticles, ulClass, linkText, languageID}) {
 	return <ul className={ulClass}>
@@ -27,7 +28,7 @@ function ArticleItem({
 				</HashLink>
 			</p>
 			<HashLink to={`${titleUrl}/#`}>
-				<img src="../../../public/img/main/arrow-news.png" alt="#"/>
+				<img src={arrowNewsImg} alt="#"/>
 			</HashLink>
 		</div>
 	</>

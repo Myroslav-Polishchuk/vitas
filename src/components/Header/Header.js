@@ -1,9 +1,10 @@
 import React, {useMemo} from 'react'
 import { HashLink } from 'react-router-hash-link';
+import LogoImage from '@img/main/vitapolHeader-new.png'
 
 import Links from './Links'
 import SearchForm from './SearchForm'
-import getI18Text from '../../components/utils/i18n'
+import getI18Text from '@components/utils/i18n'
 // import SearchBar from './SearchBar'
 
 import './Header.scss'
@@ -44,7 +45,7 @@ function Header(props) {
 
                 <div className="navigationUpImage">
                     <HashLink to={'/#'}>
-                        <img src="../../../public/img/vitapol_main_image.png" alt=""/>
+                        <img src={LogoImage} alt=""/>
                     </HashLink>
                 </div>
             </nav>

@@ -1,4 +1,5 @@
 import React from 'react';
+import mapImg from '@img/about/clients/map2021.jpg'
 
 function AboutMap() {
     return <div className="aboutMap">
@@ -24,7 +25,7 @@ function AboutMap() {
 
         <h3>Карта</h3>
         <div className="imgContainer">
-            <img alt="#" src="/img/about/clients/map2021.jpg"/>
+            <img alt="#" src={mapImg}/>
         </div>
     </div>
 
