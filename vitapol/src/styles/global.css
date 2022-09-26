@@ -1,0 +1,70 @@
+* {
+    font-family: "Open Sans";
+    line-height: 14pt;
+}
+
+.globalWrapper {
+    max-width: 1280px;
+    min-width: 320px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+}
+
+.standartContainer {
+    margin-bottom: 64px;
+}
+
+.Modal {
+    width: 612px;
+    position: absolute;
+    inset: 50% auto auto 50%;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: "Open Sans";
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Content a {
+    color: #095930;
+    font-family: "Open Sans";
+    font-weight: 700;
+}
+
+.Content button {
+    border: 0;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.buttonsWrapper {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* @media (max-width: 1024px) {
+    .globalWrapper {
+        width: 950px;
+    }
+} */

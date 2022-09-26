@@ -1,0 +1,21 @@
+.breadcrumbs {
+    margin-bottom: 30px;
+
+    & .link {
+        font-size: 12px;
+        color: #8a9599;
+        font-weight: 400;
+        font-family: "Open Sans";
+    }
+
+    & .text {
+        font-size: 12px;
+        color: #8a9599;
+        font-weight: 700;
+        font-family: "Open Sans";
+    }
+
+    @media (max-width: 700px) {
+        margin-bottom: 10px;
+    }
+}

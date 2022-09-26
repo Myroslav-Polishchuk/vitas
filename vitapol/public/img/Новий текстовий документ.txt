@@ -1,0 +1,32 @@
+.bg-стрілка___копия__9 {
+    width: 36px; height: 36px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+x
+
+.bg-Слой_18 {
+    width: 16px; height: 15px;
+    background: url('css_sprites.png') -10px -66px;
+}
+
+x
+
+.bg-Слой_19 {
+    width: 14px; height: 16px;
+    background: url('css_sprites.png') -102px -10px;
+}
+
+x
+
+.bg-Слой_20 {
+    width: 13px; height: 13px;
+    background: url('css_sprites.png') -102px -46px;
+}
+
+x
+
+.bg-Слой_22 {
+    width: 16px; height: 16px;
+    background: url('css_sprites.png') -66px -10px;
+}

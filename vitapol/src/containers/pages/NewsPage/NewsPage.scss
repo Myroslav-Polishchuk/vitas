@@ -1,0 +1,44 @@
+.newsListPage {
+
+    & li {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 16px;
+    }
+    & li a {
+        display: flex;
+        flex-direction: row;
+        color: #000000;
+    }
+
+    & li .newsDate {
+        font-size: 14px;
+    }
+
+    & li a p:first-child {
+        display: flex;
+        flex-direction: row;
+        color: #2a6f4c;
+    }
+
+    & li:last-child {
+        margin-bottom: 0;
+    }
+
+    & li p:first-child {
+        margin-right: 10px;
+    }
+
+    & li p:first-child a {
+        font-size: 12px;
+        color: #2a6f4c;
+        font-weight: 600;
+        font-family: "Open Sans";
+    }
+
+    & li p:last-child a {
+        font-size: 16px;
+        color: #000000;
+        font-family: "Open Sans";
+    }
+}

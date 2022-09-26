@@ -1,0 +1,20 @@
+.AuthorizationForm {
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+
+    & .form-control {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    & button {
+        height: 28px;
+    }
+}
+
+.adminFormikPage {
+    line-height: 24px;
+    font-family: "Open Sans";
+}

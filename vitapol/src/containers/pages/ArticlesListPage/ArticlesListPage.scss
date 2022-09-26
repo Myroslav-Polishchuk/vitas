@@ -1,0 +1,65 @@
+.articleList {
+    & li {
+        margin-bottom: 30px;
+    }
+
+    & li h6 a {
+        color: #000000;
+        font-size: 16px;
+        font-family: "Open Sans";
+        line-height: 1.5;
+    }
+}
+
+.articleAuthors {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    margin-top: 3px;
+
+    &List {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 8px;
+
+        & li {
+            margin-right: 8px;
+            margin-bottom: 0;
+        }
+
+        & li a {
+            height: 100%;
+            vertical-align: middle;
+            color: #095930;
+            font-size: 12px;
+        }
+    }
+
+    &Journal {
+        border-left: 1px solid #8a9599;
+        padding-left: 8px;
+
+        & span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            vertical-align: super;
+            font-size: 12px;
+            color: #8a9599;
+        }
+
+        & a {
+            color: #8a9599;
+        }
+    }
+}
+
+.articleListState {
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}

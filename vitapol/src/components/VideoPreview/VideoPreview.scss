@@ -1,0 +1,98 @@
+.videoPreviewTitle {
+	width: 100%;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "Open Sans";
+	text-transform: uppercase;
+	box-sizing: border-box;
+	padding-left: 30px;
+	position: relative;
+    margin-bottom: 50px;
+
+    &::before {
+        content: '';
+        display: block;
+        border-radius: 50%;
+        background-color: #095930;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 6px;
+        left: 0px;
+    }
+}
+
+.videoPreview {
+	width: 100%;
+
+	& div {
+		width: 50%;
+		height: 150px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+		overflow: hidden;
+	}
+
+	& div:last-child {
+		box-sizing: border-box;
+		padding-top: 6px;
+		padding-left: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	& div img {
+		width: calc(100% + 66px);
+		height: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	& li {
+		width: 100%;
+		max-width: 400px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	& div h6 {
+		color: #c7262c;
+		font-family: "Open Sans";
+		font-size: 12px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	& div p {
+		font-size: 14px;
+		line-height: 14pt;
+		font-family: "Open Sans";
+		font-weight: bold;
+		color: black;
+		text-overflow: ellipsis;
+	}
+
+	& div p:hover {
+		color: #505050;
+	}
+}
+
+.videoViewMore {
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #095930;
+	margin-top: 36px;
+
+	&:hover {
+		color: #00a748;
+	}
+}
+

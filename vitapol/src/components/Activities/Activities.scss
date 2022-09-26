@@ -1,0 +1,69 @@
+.activitiesContainer {
+	margin-bottom: 120px;
+}
+
+.activityTitle {
+	width: 100%;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "Open Sans";
+	text-transform: uppercase;
+	box-sizing: border-box;
+	padding-left: 30px;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.activityTitle::before {
+	content: '';
+	display: block;
+	border-radius: 50%;
+	background-color: #095930;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 6px;
+	left: 0px;
+}
+
+.imgList {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+
+	& div {
+		height: 295px;
+	}
+
+	& div img {
+		width: 100%;
+		height: 100%;
+	}
+
+	& li {
+		margin: 8px;
+		margin-bottom: 16px;
+		margin-top: 0;
+		// margin-bottom: 25px;
+	}
+}
+
+// .listImg {
+// 	& li {
+// 		margin-bottom: 20px;;
+// 	}
+// 	& li a {
+// 		width: 294px;
+// 		height: 147px;
+// 		display: block;
+// 	}
+
+// 	& li a img {
+// 		max-width: 100%;
+//         max-height: 100%;
+// 		display: block;
+// 		margin-left: auto;
+// 		margin-right: auto;
+// 	}
+// }

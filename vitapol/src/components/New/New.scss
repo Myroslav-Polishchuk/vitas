@@ -1,0 +1,69 @@
+.newItem {
+    &__maintext {
+      font-size: 16px;
+      line-height: 24px;
+      color: #000000;
+      font-weight: 400;
+      font-family: "Open Sans";
+      margin-bottom: 25px;
+
+      & i {
+          font-style: italic;
+      }
+
+      & h5 {
+          font-weight: bold;
+      }
+
+      & div {
+          margin-bottom: 24px;
+          white-space: pre-line;
+      }
+  }
+
+  & h3 {
+    font-size: 30px;
+    line-height: 24pt;
+    color: #0a0a0a;
+    font-weight: 700;
+    font-family: "Open Sans";
+    margin-bottom: 24px;
+  }
+}
+
+.newItem__datePublic {
+  margin-bottom: 20px;
+}
+
+.newItem {
+    & a {
+      color: #095930;
+    }
+
+    & a:hover {
+      color: #00a748;
+    }
+
+
+
+}
+
+.newItem .imgWrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.newItem .iframeWrapper iframe {
+  width: 100%;
+  height: 530px;
+}
+
+
+
+
+
+
+
+
+
+

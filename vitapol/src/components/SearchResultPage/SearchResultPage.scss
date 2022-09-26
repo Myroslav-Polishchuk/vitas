@@ -1,0 +1,55 @@
+.searchFormResultPage {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 32px;
+	font-size: 12pt;
+	width: 100%;
+	position: relative;
+	padding: 0;
+	border: 0.5px solid #e5e5e5;
+
+	& input {
+		width: 100%;
+		height: 100%;
+		color: #095930;
+		box-sizing: border-box;
+		padding: 0;
+		border: 0;
+		padding-right: 34px;
+		padding-left: 15px;
+		padding-top: 3px;
+		background-color: #f3f3f3;
+		font-family: "Open Sans";
+		font-size: 14px;
+	}
+
+	& input::placeholder {
+		color: #095930;
+		font-family: "Open Sans";
+		font-size: 14px;
+	}
+
+	& button {
+		position: absolute;
+		right: 0;
+		width: 32px;
+		height: 32px;
+		padding: 0;
+		border: 0;
+		background-color: #f3f3f3;
+		background-image: url('../../../public/img/main/loupe.png');
+		background-repeat: no-repeat;
+		background-size: 16px;
+		background-position: center;
+	}
+}
+
+.searchFormWrapper {
+	margin-bottom: 60px;
+	& .resultText {
+		margin-top: 20px;
+		font-style: italic;
+		color: #8a9599;
+	}
+}

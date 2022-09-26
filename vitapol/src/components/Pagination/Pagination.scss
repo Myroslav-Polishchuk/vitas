@@ -1,0 +1,34 @@
+.paginationList {
+    display: flex;
+    color: green;
+    margin-top: 40px;
+    user-select: none;
+
+    & a {
+        cursor: pointer;
+    }
+
+    & li {
+        padding: 0 10px;
+    }
+
+    & li:hover {
+        color: black;
+    }
+
+    & .selected {
+        color: #c7262c;
+
+        &:hover {
+            color: #c7262c;
+        }
+    }
+
+    & .previous {
+        padding-left: 0;
+    }
+
+    &--first {
+        margin-bottom: 50px;
+    }
+}

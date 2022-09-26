@@ -1,0 +1,360 @@
+.aboutMap {
+    & h3 {
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    & p {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    & p a {
+        color: black;
+    }
+
+    & p .Green {
+        color: #095930;
+        &:hover {
+            color: #00a748;
+        }
+    }
+
+    & .emails {
+        display: flex;
+        flex-direction: row;
+
+        & li {
+            margin-right: 10px;
+        }
+
+        & li a {
+            color: #095930;
+        }
+
+        & li a:hover {
+            color: #00a748;
+        }
+    }
+}
+
+.aboutMain {
+    line-height: 24px;
+
+    & b {
+        font-weight: bold;
+    }
+
+    & p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    & p span {
+        font-weight: bold;
+    }
+
+    & ul {
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        & li {
+            line-height: 20px;
+            margin-left: 40px;
+            margin-bottom: 5px;
+            position: relative;
+            list-style-type: square;
+        }
+
+        & li::marker {
+            color: #095930;
+        }
+    }
+
+    & .noListType li {
+        list-style-type: none;
+        margin-left: 0;
+
+        & a {
+            font-family: 'Open sans';
+            color: black;
+        }
+
+        .listItemGreen {
+            color: #095930
+        }
+
+        .listItemGreen:hover {
+            color: #00a748;
+        }
+    }
+
+    & h3 {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 24px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        line-height: 20px;
+    }
+
+    & h5 {
+        font-weight: bold;
+        margin-top: 20px;
+        line-height: 20px;
+    }
+
+    & .greenList {
+        color: #00a748;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    & .aboutListImg {
+        margin-top: 20px;
+
+        & li {
+            height: 50px;
+            border-top: #e5e5e5 1px solid;
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+        }
+
+        & li:first-child {
+            border-top: 0;
+        }
+
+        & li span {
+            font-size: 12px;
+            color: gray;
+        }
+
+        & img {
+            margin-right: 50px;
+        }
+    }
+}
+
+.aboutProjects {
+    line-height: 16pt;
+
+    & .hr {
+        border-color: #c1cec8;
+        border-bottom: 0;
+    }
+
+    & h3 {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        line-height: 24px;
+    }
+
+    & h4 {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    & h5 {
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    & h6 {
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    & .journalsList {
+        margin-bottom: 30px;
+
+        & li {
+            margin-bottom: 10px;
+        }
+
+        & span {
+            color: #095930;
+            cursor: pointer;
+        }
+
+        & span:hover {
+            color: #00a748;
+        }
+    }
+
+    & .allJournals {
+        display: flex;
+        flex-wrap: wrap;
+
+        & li {
+            flex-basis: 50%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            box-sizing: border-box;
+            margin: 0;
+
+            & span {
+                display: inline-block;
+                width: 100%;
+                color: #095930;
+                cursor: pointer;
+            }
+
+            & span:hover {
+                color: #00a748;
+            }
+        }
+    }
+
+    & .allJournalsHeader {
+        margin-top: 48px;
+        margin-bottom: 8px;
+    }
+
+    & .journalContainer {
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        background-color: #e6eeea88;
+        padding: 16px;
+    }
+
+    & img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    & ul {
+        margin-bottom: 30px;
+        & li {
+            margin-bottom: 5px;
+        }
+    }
+
+    & .special {
+        margin-bottom: 20px;
+
+        & span {
+            font-weight: bold;
+        }
+    }
+
+    & .special2 {
+        margin-bottom: 0;
+        & span {
+            font-weight: bold;
+        }
+    }
+
+    & p {
+        line-height: 24px;
+        margin-bottom: 20px;;
+    }
+}
+
+.aboutServices {
+    & .serviceTable {
+        border-color: #e5e5e5;
+
+        & tr, td {
+            border-color: #e5e5e5;
+        }
+    }
+
+    & h3 {
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    // & h3:before {
+    //     content: '';
+    //     display: block;
+    //     width: 6px;
+    //     height: 6px;
+    //     border-radius: 50%;
+    //     background-color: black;
+    //     position: absolute;
+    //     top: 6px;
+    //     left: 0;
+    // }
+
+    & p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+
+    & p a {
+        color: black;
+    }
+
+    & .stardartList {
+        // color: #00a748;
+        line-height: 20px;
+        margin-bottom: 16px;
+
+        & li {
+            // padding-left: 20px;
+            margin-left: 40px;
+            margin-bottom: 5px;
+            position: relative;
+            list-style-type: square;
+        }
+
+        & li::marker {
+            color: #095930;
+        }
+
+        // & li:before {
+        //     content: '';
+        //     display: block;
+        //     width: 6px;
+        //     height: 6px;
+        //     border-radius: 50%;
+        //     background-color: #00a748;
+        //     position: absolute;
+        //     top: 6px;
+        //     left: 0;
+        // }
+    }
+
+    table {
+        & td {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        & span {
+            font-weight: bold;
+        }
+    }
+
+    & .uniqueList {
+        color: #00a748;
+
+        & li {
+            line-height: 20px;
+        }
+
+        & li span {
+            font-weight: bold;
+        }
+    }
+}
+
+.hr2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: 0;
+}
+

@@ -1,0 +1,94 @@
+.videoCategoriesList {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    & li {
+        width: 100%;
+        max-width: 295px;
+        // height: 225px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-right: 15px;
+    }
+
+    & li .imgLink {
+        width: 100%;
+        height: 165px;
+    }
+
+    & li .imgLink img {
+        width: 100%;
+        height: 100%;
+    }
+
+    & li h6 {
+        width: 100%;
+        font-size: 12px;
+        color: #c7262c;
+        font-weight: 700;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    & li h6 a {
+        width: 100%;
+        font-size: 12px;
+        color: #c7262c;
+        font-weight: 400;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    & li p {
+        width: 100%;
+        font-size: 14px;
+        color: #000000;
+        font-weight: 700;
+        font-family: "Open Sans";
+        // max-height: 36px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    & li a {
+        width: 100%;
+        font-size: 14px;
+        color: #000000;
+        font-weight: 700;
+        font-family: "Open Sans";
+        // max-height: 36px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.videoListPagination {
+    display: flex;
+    color: green;
+
+    & li {
+        width: 20px;
+        padding: 0 10px;
+        cursor: pointer;
+    }
+
+    & li a {
+        display: block;
+        width: 100%;
+    }
+
+    & li:hover {
+        color: black;
+    }
+
+    & .selected {
+        color: red;
+    }
+}
