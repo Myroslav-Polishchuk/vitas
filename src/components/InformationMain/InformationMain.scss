@@ -1,6 +1,6 @@
 .InformationMainWrapper {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -11,17 +11,17 @@
 }
 
 .newsTitle {
-	height: 36px;
-	text-transform: uppercase;
-	box-sizing: border-box;
-	background-color: #e6e6e6;
-	padding-left: 15px;
-	font-size: 14px;
-	font-family: "Open Sans";
-	font-weight: bold;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+    height: 36px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    background-color: #e6e6e6;
+    padding-left: 15px;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 
     &__text a {
@@ -61,15 +61,14 @@
 }
 
 .newsList {
-	width: 100%;
-	height: calc(100% - 36px);
-	box-sizing: border-box;
-	padding-top: 40px;
+    width: 100%;
+    height: calc(100% - 36px);
+    box-sizing: border-box;
+    padding-top: 40px;
     background-color: white;
 
     & li {
         padding-left: 15px;
-        padding-right: 15px;
         padding-bottom: 20px;
         padding-right: 12px;
         border-bottom-width: 1px;
@@ -97,34 +96,30 @@
         color: #00a748;
     }
 
-    // & li a:before {
-    //     content: '';
-    //     display: block;
-    //     width: 1px;
-    //     height: 35px;
-    //     background-color: #c1cec8;
-    //     position: absolute;
-    //     top: 0;
-    //     left: -15px;
-    // }
-
-    & li a:hover::before {
-        background-color: #00a748;
+    & li a:before {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: #f26e18;
+        position: absolute;
+        top: 5px;
+        left: -15px;
     }
 }
 
 .magazines {
-	height: 36px;
-	text-transform: uppercase;
-	box-sizing: border-box;
-	background-color: #0b5731;
-	padding-left: 15px;
-	font-size: 14px;
-	font-family: "Open Sans";
-	font-weight: bold;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+    height: 36px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    background-color: #0b5731;
+    padding-left: 15px;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 
     & p {
@@ -133,10 +128,10 @@
 }
 
 .magazinesList {
-	height: calc(100% - 36px);
-	max-height: 450px;
-	box-sizing: border-box;
-	padding-top: 40px;
+    height: calc(100% - 36px);
+    max-height: 450px;
+    box-sizing: border-box;
+    padding-top: 40px;
     background-color: #f3f3f3;
 
     & li {
@@ -162,8 +157,8 @@
 
 .currentPublicationWrapper {
     max-width: 612px;
-	height: 100%;
-	display: flex;
+    height: 100%;
+    display: flex;
     flex-direction: column;
     flex-grow: 1;
     order: 2;
@@ -183,8 +178,8 @@
 }
 
 .currentPublicationImg {
-	width: 100%;
-	max-height: 350px;
+    width: 100%;
+    max-height: 350px;
     position: relative;
     background-color: #f3f3f3;
 
@@ -207,12 +202,12 @@
     }
 
     & img {
-		max-width: 100%;
+        max-width: 100%;
         max-height: 100%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .currentPublication__preview {
@@ -300,11 +295,11 @@
     }
 
     & .imgWrapper img {
-		max-width: 100%;
+        max-width: 100%;
         max-height: 100%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media (max-width: 1279px) {

@@ -5,6 +5,7 @@ function Recomendations({recomendations, ulClass, languageID}) {
     if (!recomendations.length || !recomendations[0].recomendations || !recomendations[0].recomendations.length) {
         return '';
     }
+
     return <ul className={ulClass}>
         {recomendations.map((data, index) => data.category.id !== 'all'
             ? <RecomendationItem {...data} languageID={languageID} key={'recomendation' + index}/>
@@ -26,10 +27,10 @@ function RecomendationItem({category, recomendations, languageID, viewMoreText})
         </div>
     </>
 
-	return (
-		<li>
-			{RecomendationTitle}
-			<div>
+    return (
+        <li>
+            {RecomendationTitle}
+            <div>
                 {recomendations.map(rec => {
                     return <a
                         className={'recomendationItemTitle__dataLink'}
@@ -41,13 +42,13 @@ function RecomendationItem({category, recomendations, languageID, viewMoreText})
                         {rec.text}
                     </a>
                 })}
-			</div>
-		</li>
-	)
+            </div>
+        </li>
+    )
 }
 
 function RecomendationItemAll({recomendations, languageID}) {
-	return <>
+    return <>
         {recomendations.map(rec => {
             return <li>
                 <div className={"recomendationItemTitle"}>
@@ -73,7 +74,7 @@ function RecomendationItemAll({recomendations, languageID}) {
                 </div>
             </li>
         })}
-	</>
+    </>
 }
 
 Recomendations.defaultProps = {
