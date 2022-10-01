@@ -57,6 +57,7 @@
     &__absolute {
         width: 100%;
         position: absolute;
+        top: calc(50% - 17px);
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
