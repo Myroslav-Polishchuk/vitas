@@ -58,6 +58,7 @@
         width: 100%;
         position: absolute;
         top: calc(50% - 17px);
+        left: 0;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -122,6 +123,7 @@
 }
 
 .goHomeWrapper {
+    min-width: 80px;
     height: 32px;
     padding-left: 10px;
     padding-right: 29px;
@@ -275,6 +277,7 @@
 
     & button {
         position: absolute;
+        top: 0;
         right: 0;
         width: 32px;
         height: 32px;
