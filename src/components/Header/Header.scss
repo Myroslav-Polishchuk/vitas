@@ -64,6 +64,14 @@
         padding-left: 108px;
         box-sizing: border-box;
     }
+
+    &Image {
+        & a {
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+    }
 }
 
 .navigationBottomWrapper {
@@ -125,12 +133,12 @@
         display: block;
         width: 24px;
         height: 21px;
-        background: url('../../../public/img/main/video.png');
+        background: url('../../../public/img/main/video-2-hover.jpg');
         margin-right: 16px;
     }
 
-    & .icon:hover {
-        background: url('../../../public/img/main/video_hover.png');
+    &:hover .icon {
+        background: url('../../../public/img/main/video-2.jpg');
     }
 
     & .iconText {
@@ -141,7 +149,7 @@
         user-select: none;
     }
 
-    & .iconText:hover {
+    &:hover .iconText {
         color: #e43820;
     }
 }

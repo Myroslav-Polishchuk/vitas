@@ -12,7 +12,7 @@ function VideoPreview({
 }) {
     const videoPreviewsItems = videos.map(({previewImgSrc, Category, previewText, id}) => {
         return <li key={id}>
-            <div>
+            <div className='videoPreviewImg'>
                 <img src={previewImgSrc} alt="#"/>
             </div>
             <div>
