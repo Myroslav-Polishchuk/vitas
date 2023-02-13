@@ -53,12 +53,12 @@ function Header(props) {
 
         <nav className="navigationBottomWrapper">
             <div className="globalWrapper headerGlobalWrapper" ref={props.globalWrapperRef}>
-                <div className="goHomeWrapper">
-                    <HashLink className="icon" to={'/videosList/#'} onClick={props.clickedNavigationListMenuFalse}/>
-                    <HashLink className="iconText" to={'/videosList/#'} onClick={props.clickedNavigationListMenuFalse}>
+                <HashLink className="goHomeWrapper" to={'/videosList/#'} onClick={props.clickedNavigationListMenuFalse}>
+                    <span className="icon" />
+                    <span className="iconText">
                         {titles.video}
-                    </HashLink>
-                </div>
+                    </span>
+                </HashLink>
                 <Links
                     dataLinks={props.categories}
                     GlobalWrapperWidht={props.GlobalWrapperWidht}

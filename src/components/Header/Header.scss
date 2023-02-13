@@ -57,11 +57,21 @@
     &__absolute {
         width: 100%;
         position: absolute;
+        top: calc(50% - 17px);
+        left: 0;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         padding-left: 108px;
         box-sizing: border-box;
+    }
+
+    &Image {
+        & a {
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
     }
 }
 
@@ -113,6 +123,7 @@
 }
 
 .goHomeWrapper {
+    min-width: 80px;
     height: 32px;
     padding-left: 10px;
     padding-right: 29px;
@@ -124,12 +135,12 @@
         display: block;
         width: 24px;
         height: 21px;
-        background: url('../../../public/img/main/video.png');
+        background: url('../../../public/img/main/video-2-hover.jpg');
         margin-right: 16px;
     }
 
-    & .icon:hover {
-        background: url('../../../public/img/main/video_hover.png');
+    &:hover .icon {
+        background: url('../../../public/img/main/video-2.jpg');
     }
 
     & .iconText {
@@ -140,7 +151,7 @@
         user-select: none;
     }
 
-    & .iconText:hover {
+    &:hover .iconText {
         color: #e43820;
     }
 }
@@ -266,6 +277,7 @@
 
     & button {
         position: absolute;
+        top: 0;
         right: 0;
         width: 32px;
         height: 32px;

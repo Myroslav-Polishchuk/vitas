@@ -1,9 +1,11 @@
 .newsListPage {
+    line-height: 21.33px;
 
     & li {
         display: flex;
         flex-direction: row;
         margin-bottom: 16px;
+        max-width: 750px;
     }
     & li a {
         display: flex;
@@ -12,7 +14,7 @@
     }
 
     & li .newsDate {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     & li a p:first-child {
@@ -26,7 +28,7 @@
     }
 
     & li p:first-child {
-        margin-right: 10px;
+        margin-right: 12px;
     }
 
     & li p:first-child a {
