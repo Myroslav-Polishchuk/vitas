@@ -13,7 +13,7 @@ function Pagination({
     paginationClassName,
     onPaginationChange,
     initialPage,
-    forcePage,
+    forcePage = 0,
     languageID,
     paginationPrevLabel,
     paginationNextLabel
