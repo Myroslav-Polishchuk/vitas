@@ -40,17 +40,50 @@ function VideoListPage(props) {
     }, [props.match.params.categoryEng, videosCategories]);
 
     useEffect(() => {
-        if (advertisingPlaceAxios) {
-            advertisingPlaceAxios.get('/videolist').then(response => {
-                if (response.status === 200) {
-                    setAdvertisingPlaces(response.data);
-                } else {
-                    throw new Error('Authors Error')
-                }
-            }).catch(err => {
-                console.log(err);
-            })
+        const promises = [];
+
+        const advertisingPromise = new Promise((resolve, reject) => {
+            resolve(advertisingPlaceAxios.get('/videolist'));
+        });
+
+        promises.push(advertisingPromise);
+
+        if (activeCategory) {
+            const videoLengthPromise = new Promise((resolve, reject) => {
+                resolve(videoAxios.get(`/length/${activeCategory.id}`));
+            });
+
+            promises.push(videoLengthPromise);
         }
+
+        Promise.allSettled(promises).then((results) => {
+            let advertisingValue = null;
+            let videoLength = null;
+            results.forEach((result, index) => {
+                if (result.status === 'fulfilled') {
+                    if (index === 0) {
+                        advertisingValue = result.value.data;
+                        return;
+                    }
+
+                    if (index === 1) {
+                        videoLength = result.value.data.videosLength;
+                        return;
+                    }
+                }
+            });
+
+            if (advertisingValue !== null) {
+                setAdvertisingPlaces(advertisingValue);
+            }
+
+            if (videoLength !== null) {
+                setVideoLength(videoLength);
+            }
+
+            setActivePagination(1);
+        })
+
     }, [activeCategory]);
 
     useEffect(() => {
@@ -70,20 +103,6 @@ function VideoListPage(props) {
     }, [props.languageID]);
 
     useEffect(() => {
-        if (activeCategory) {
-            videoAxios.get(`/length/${activeCategory.id}`).then(response => {
-                    if (response.status === 200) {
-                        setVideoLength(response.data.videosLength);
-                    } else {
-                        throw new Error('Recomendation Error');
-                    }
-                }).catch(err => {
-                    console.log(err);
-                })
-        }
-    }, [activeCategory]);
-
-    useEffect(() => {
         const url = activeCategory && activeCategory.id ? activeCategory.id : '';
         videoAxios.post(`/${url}`, {
             page: activePagination
@@ -95,7 +114,7 @@ function VideoListPage(props) {
             }
         }).catch(err => {
             console.log(err);
-        })
+        });
 
     }, [activeCategory, activePagination]);
 
@@ -105,6 +124,7 @@ function VideoListPage(props) {
         <Pagination
             dataLength={videosLength}
             limitPerPage={limitPerPage}
+            forcePage={activePagination - 1}
             paginationClassName={"videoListPagination"}
             onPaginationChange={setActivePagination}
         />

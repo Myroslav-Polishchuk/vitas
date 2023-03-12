@@ -13,7 +13,7 @@ function Pagination({
     paginationClassName,
     onPaginationChange,
     initialPage,
-    forcePage,
+    forcePage = 0,
     languageID,
     paginationPrevLabel,
     paginationNextLabel
@@ -35,8 +35,8 @@ function Pagination({
             initialPage={initialPage}
             forcePage={forcePage}
             containerClassName={paginationClassName || defaultPaginationClass}
-            onPageChange={(page) => {
-                onPaginationChange(page.selected + 1);
+            onPageChange={(event) => {
+                onPaginationChange(event.selected + 1);
             }}
         />
     }
