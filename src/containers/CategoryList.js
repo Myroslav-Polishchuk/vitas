@@ -12,21 +12,23 @@ function CategoryList(props) {
     const [fullCategory, setFullCategory] = useState([]);
 
     useEffect(() => {
-        if (props.categoryName) {
-            axioses[props.categoryName]
-                .get(`/categories`)
-                .then(response => {
-                    if (response.status === 200) {
-                        if (props.additionalCategory) {
-                            setFullCategory([...response.data, props.additionalCategory]);
-                        } else {
-                            setFullCategory(response.data);
-                        }
-                    } else {
-                        throw new Error('Recomendation Error');
-                    }
-                })
+        if (!props.categoryName) {
+            return;
         }
+
+        axioses[props.categoryName]
+            .get(`/categories`)
+            .then(response => {
+                if (response.status === 200) {
+                    if (props.additionalCategory) {
+                        setFullCategory([...response.data, props.additionalCategory]);
+                    } else {
+                        setFullCategory(response.data);
+                    }
+                } else {
+                    throw new Error('Recomendation Error');
+                }
+            });
     }, [props.categoryName, props.additionalCategory])
 
     return <Component {...props} categories={fullCategory} />
