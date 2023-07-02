@@ -3,8 +3,8 @@ import React from 'react'
 function Journal(props) {
     return <div className="journalContainer" key={props.name}>
         <h3>{props.name}</h3>
-        <p>{props.fullname}</p>
-        <img src={props.img} alt="#"/>
+        <p className="special3">{props.fullname}</p>
+        {/* <img src={props.img} alt="#"/> */}
         <p className="special"><span>Спеціалізація:</span> {props.special} </p>
         <p className="special"><span>Головний редактор: </span>{props.mainEditor}</p>
         <p>{props.shefEditor}</p>

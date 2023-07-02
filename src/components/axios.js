@@ -1,7 +1,7 @@
 const axios = require('axios');
 
-const host = 'http://localhost:8080';
-// const host = 'http://testback.fun';
+// const host = 'http://localhost:8080';
+const host = 'http://testback.fun';
 
 const mainAxios = axios.create({
     baseURL: `${host}`

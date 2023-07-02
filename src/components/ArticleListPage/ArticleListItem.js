@@ -27,7 +27,7 @@ function ArticleListItem({Journal, Authors, main_title, id}) {
                 {authorsListItems}
             </ul>
             <p className="articleAuthorsJournal">
-                <span>[ <a href={Journal && Journal.url} rel="noopener noreferrer" target="_blank">{Journal && Journal.name}</a> ]</span>
+                <span><a href={Journal && Journal.url} rel="noopener noreferrer" target="_blank">{Journal && Journal.name}</a></span>
             </p>
         </div>
     </li>
