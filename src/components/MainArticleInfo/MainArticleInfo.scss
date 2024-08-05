@@ -317,3 +317,108 @@
     height: 1150px;
     margin-bottom: 30px;
 }
+
+.pdfSection {
+    .react-pdf__Document {
+        display: flex;
+        justify-content: center;
+        overflow: scroll;
+        box-shadow: -1px 0px 15px 2px rgba(0,0,0,0.55);
+        margin-bottom: 20px;
+    }
+
+    .panel {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+
+        .zoom {
+            display: flex;
+            justify-content: center;
+
+            button {
+                width: 32px;
+                height: 32px;
+                margin-right: 10px;
+            }
+
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                margin-right: 10px;
+            }
+
+            .loupe {
+                display: block;
+                width: 32px;
+                height: 32px;
+                padding: 0;
+                border: 0;
+                background-color: #f3f3f3;
+                background-image: url('../../../public/img/main/loupe.png');
+                background-repeat: no-repeat;
+                background-size: 16px;
+                background-position: center;
+            }
+        }
+    }
+
+    .pages {
+        display: flex;
+        margin-right: 16px;
+
+        button {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }
+
+        span {
+            margin-right: 10px;
+            line-height: 32px;
+        }
+    }
+}
+
+.zoom-level-1 {
+    .react-pdf__Page {
+        transform: scale(1);
+        transition: transform 0.5s;
+        transform-origin: 0 0;
+    }
+}
+
+.zoom-level-2 {
+    .react-pdf__Page {
+        transform: scale(1.2);
+        transition: transform 0.5s;
+        transform-origin: 0 0;
+    }
+}
+
+.zoom-level-3 {
+    .react-pdf__Page {
+        transform: scale(1.4);
+        transition: transform 0.5s;
+        transform-origin: 0 0;
+    }
+}
+
+.zoom-level-4 {
+    .react-pdf__Page {
+        transform: scale(1.6);
+        transition: transform 0.5s;
+        transform-origin: 0 0;
+    }
+}
+
+.zoom-level-5 {
+    .react-pdf__Page {
+        transform: scale(1.8);
+        transition: transform 0.5s;
+        transform-origin: 0 0;
+    }
+}

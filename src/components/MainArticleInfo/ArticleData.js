@@ -4,6 +4,7 @@ import MetaArticle from './MetaArticle';
 import Resume from './Resume';
 import FormatText from '../../util/FormatText'
 import GooglePDFViewer from './GooglePDFViewer';
+import ReactPDFviewer from './ReactPDFviewer';
 
 function ArticleData({
     main_title,
@@ -22,9 +23,11 @@ function ArticleData({
     Journal
 }) {
     const meta_name = Journal ? `${Journal.name}, №${journal_number} // ${journal_year}, с. ${journal_pages}` : '';
+
     const mainPart = showPDF && File
-        ? <GooglePDFViewer link={File.link}/>
+        ? <ReactPDFviewer link={File.link}/>
         : <div className="articleData__maintext" dangerouslySetInnerHTML={{__html: FormatText(main_fullText)}} />
+
     const resume = resume_paragraphs
         ? <Resume
             mainText={mainText}
@@ -34,12 +37,14 @@ function ArticleData({
 
     return <div className="articleData">
         <h3>{main_title}</h3>
+
         <MetaArticle
             Authors={Authors}
             meta_code={meta_code}
             meta_name={meta_name}
             meta_workplace={meta_workplace}
-         />
+        />
+
         {resume}
         {mainPart}
     </div>
