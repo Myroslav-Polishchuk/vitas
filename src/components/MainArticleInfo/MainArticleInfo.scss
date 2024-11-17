@@ -228,7 +228,7 @@
         color: #000000;
         font-weight: 700;
         font-family: "Open Sans";
-        margin-bottom: 20px;
+        margin-bottom: 24px;
     }
 
     & li {
@@ -239,7 +239,7 @@
         & a {
             font-size: 14px;
             color: #000000;
-            font-weight: 700;
+            font-weight: 500;
             font-family: "Open Sans";
         }
     }
@@ -330,7 +330,7 @@
     .panel {
         display: flex;
         justify-content: center;
-        margin-bottom: 24px;
+        margin-bottom: 48px;
 
         .zoom {
             display: flex;
@@ -350,25 +350,12 @@
                 height: 32px;
                 margin-right: 10px;
             }
-
-            .loupe {
-                display: block;
-                width: 32px;
-                height: 32px;
-                padding: 0;
-                border: 0;
-                background-color: #f3f3f3;
-                background-image: url('../../../public/img/main/loupe.png');
-                background-repeat: no-repeat;
-                background-size: 16px;
-                background-position: center;
-            }
         }
     }
 
     .pages {
         display: flex;
-        margin-right: 16px;
+        margin-right: 48px;
 
         button {
             width: 32px;

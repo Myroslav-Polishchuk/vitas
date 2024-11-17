@@ -9,8 +9,7 @@ function AboutMap() {
 
         <ul className="emails">
             <li>Електронна пошта: </li>
-            <li><a href='mailto:vitapol3@gmail.com'>vitapol3@gmail.com,</a></li>
-            <li><a href='mailto:journals@vitapol.com.ua'>journals@vitapol.com.ua</a></li>
+            <li><a href='mailto:vitapol3@gmail.com'>vitapol3@gmail.com</a></li>
         </ul>
 
         <h3>Завідувач секретаріату науково-практичних журналів</h3>

@@ -53,7 +53,7 @@ function ReactPDFviewer(props) {
                 file={props.link}
                 onLoadSuccess={onDocumentLoadSuccess}
             >
-                <Page pageNumber={pageNumber} height={screenHeight} />
+                <Page renderTextLayer={false} pageNumber={pageNumber} height={screenHeight} />
             </Document>
 
             <div className="panel">
@@ -82,8 +82,6 @@ function ReactPDFviewer(props) {
 
                 <div className="zoom">
 
-                    <span className="loupe"></span>
-
                     <button
                         type="button"
                         disabled={zoomLevel <= 1}
@@ -93,7 +91,7 @@ function ReactPDFviewer(props) {
                     </button>
 
                     <span>
-                        {zoomLevel}
+                        {zoomLevel === 1 ? '100%' : `${100 + (zoomLevel - 1) * 20}%`}
                     </span>
 
                     <button

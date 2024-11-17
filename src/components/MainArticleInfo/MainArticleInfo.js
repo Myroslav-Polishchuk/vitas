@@ -33,9 +33,6 @@ function MainArticleInfo({
         </HashLink>
         <ArticleData {...article} mainText={mainText}/>
         {article.showPDF && article.File.link ? <></> : <References references={article.references} ReferenceTitleName={mainText.ReferenceTitleName}/>}
-        <HashLink className="goToStartPage" to="#">
-            {goToStartPageText}
-        </HashLink>
         <Also alsoArticles={alsoArticles} mainText={mainText}/>
     </Section>
 }
