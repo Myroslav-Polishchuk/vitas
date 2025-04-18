@@ -4,16 +4,13 @@ import { Document, Page } from 'react-pdf';
 function ReactPDFviewer(props) {
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
-    const [screenHeight, setScreenHeight] = useState(1000);
+    const [screenHeight, setScreenHeight] = useState(1240);
+    const [screenWidth, setScreenWidth] = useState(950);
     const [zoomLevel, setZoomLevel] = useState(1);
 
     function onDocumentLoadSuccess({ numPages }) {
         setNumPages(numPages);
         setPageNumber(1);
-    }
-
-    function getScreenHeight() {
-        setScreenHeight(window.screen.height);
     }
 
     function changePage(offset) {
@@ -45,15 +42,13 @@ function ReactPDFviewer(props) {
         setZoomLevel(zoomLevel - 1);
     }
 
-    useEffect(getScreenHeight, []);
-
     return (
         <div className={`pdfSection zoom-level-${zoomLevel}`}>
             <Document
                 file={props.link}
                 onLoadSuccess={onDocumentLoadSuccess}
             >
-                <Page renderTextLayer={false} pageNumber={pageNumber} height={screenHeight} />
+                <Page renderTextLayer={false} pageNumber={pageNumber} height={screenHeight} width={screenWidth} />
             </Document>
 
             <div className="panel">

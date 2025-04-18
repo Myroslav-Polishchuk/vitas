@@ -15,7 +15,7 @@ export const InformationMain = {
 		{
 			ukr: "Заступник Міністра Ірина Микичак: Нове керівництво МОЗ відновлює щоденну комунікацію з областями та медичними закладами на місцях",
 			url: '#'
-		}	
+		}
 	],
 	magazines: [
 		{
@@ -54,7 +54,7 @@ export const InformationMain = {
 			text: "Хірургія України",
 			url: "#"
 		}
-	
+
 	],
 	current: {
 		imgLinkUrl: "#",
@@ -73,7 +73,7 @@ export const articleDataArr = [
 		titleUrl: '#',
 		titleText: "КАРДІОЛОГІЯ",
 		imgSrc: './img/Слой_27.png'
-		
+
 	},
 	{
 		articleTitle: "Перша науково-практична медична стаття в рубриці",
@@ -166,21 +166,21 @@ export const articleDataArr = [
 ]
 
 export const recomendationData = [
-	{	
+	{
 		recomendationParagraphFirst: "Перша назва клінічної настанови, яка займає два рядки",
 		recomendationParagraphSecond: "Друга назва клінічної настанови, яка займає два рядки",
 		recomendationParagraphThird: "Третя назва клінічної настанови, яка займає два рядки",
 		titleText: "ТЕРАПІЯ",
 		titleClassName: "recomendationItemTitle"
 	},
-	{	
+	{
 		recomendationParagraphFirst: "Перша назва клінічної настанови, яка займає два рядки",
 		recomendationParagraphSecond: "Друга назва клінічної настанови, яка займає два рядки",
 		recomendationParagraphThird: "Третя назва клінічної настанови, яка займає два рядки",
 		titleText: "КАРДІОЛОГІЯ",
 		titleClassName: "recomendationItemTitle"
 	},
-	{	
+	{
 		recomendationParagraphFirst: "Перша назва клінічної настанови, яка займає два рядки",
 		recomendationParagraphSecond: "Друга назва клінічної настанови, яка займає два рядки",
 		recomendationParagraphThird: "Третя назва клінічної настанови, яка займає два рядки",
@@ -195,17 +195,17 @@ export const ActivitiesData = [
 		imgSrc: './img/Слой_27.png',
 		imgAlt: '#'
 	},
-	{	
+	{
 		link: "#",
 		imgSrc: './img/Слой_27.png',
 		imgAlt: '#'
 	},
-	{	
+	{
 		link: "#",
 		imgSrc: './img/Слой_27.png',
 		imgAlt: '#'
 	},
-	{	
+	{
 		link: "#",
 		imgSrc: './img/Слой_27.png',
 		imgAlt: '#'
@@ -238,7 +238,7 @@ export const FooterSecondData = [
 				text: "м. Київ, 03179"
 			},
 			{
-				text: "Тел.: +38 044 298 00 60"
+				text: "Тел.: +38 096 702 11 52"
 			},
 			{
 				text: "Електронна пошта: vitapol3@gmail.com, vitapol2@ukr.net"
@@ -252,7 +252,7 @@ export const FooterSecondData = [
 				text: "Ольга Миколаївна Берник"
 			},
 			{
-				text: "Тел.: +38 044 298 00 61"
+				text: "Тел.: +38 096 702 11 52"
 			},
 			{
 				text: "Електронна пошта: vitapol3@gmail.com"
